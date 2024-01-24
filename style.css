@@ -26,8 +26,21 @@ body{
     
 }
 .loginform:hover{
-    box-shadow:0 0 100px 0px rgb(121, 97, 239), 0 0 400px 20px rgb(121, 97, 239) ;
+    box-shadow:0 0 100px 0px rgb(121, 97, 239), 0 0 4000px 20px rgb(121, 97, 239) ;
+    animation: blink 2s infinite;
 
+}
+@keyframes blink {
+    0%,100%{
+        box-shadow: 0 0 100px 0px rgb(121, 97, 239), 0 0 400px 20px rgb(121, 97, 239);
+        
+
+    }
+    40%,50%,60%{
+        box-shadow: 0 0 100px 0px rgb(121, 97, 239), 0 0 0px 0px rgb(121, 97, 239);
+
+    }
+    
 }
 
 .inputgroup{
