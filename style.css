@@ -6,20 +6,28 @@
 
 body{
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(12, 13, 13);
     display: flex;
     
     justify-content: center;
     align-items: center;
 }
 .loginform{
-    width: min(600px,90%);
+    width: min(450px,90%);
     height: 60%;
     border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color:rgb(62, 226, 241) ; */
+    background: transparent;
+    border-radius: 10px;
+    
+}
+.loginform:hover{
+    box-shadow:0 0 100px 0px rgb(121, 97, 239), 0 0 400px 20px rgb(121, 97, 239) ;
+
 }
 
 .inputgroup{
@@ -39,6 +47,7 @@ body{
     border-right: none;
     border-top: none;
     border-bottom: solid 1px red;
+    color: red;
 
     transition: all 200ms;
 
@@ -46,6 +55,7 @@ body{
 .inputgroup label {
 
     position: absolute;
+    color: red;
 
 }
 
@@ -53,20 +63,34 @@ body{
 .inputgroup input:focus +label,
 .inputgroup input:valid +label{
     transform: translateY(-10px);
+    color: blue;
+}
+.inputgroup input:hover ,
+.inputgroup input:focus ,
+.inputgroup input:valid {
+    border-bottom: solid 1px blue;
+    
+    
 }
 .topmargin{
     margin-top: 50px;
 }
 
 .divcallforaction{
-    width: 100%;
+    width: 95%;
     height: 45px;
-    background-color: rgb(rgb(152, 182, 237),);
+    background-color: rgb(rgb(74, 120, 105),);
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
 
 }
 
 .btnlogin{
     border: solid 1px blue;
+    width: 150px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    
 }
